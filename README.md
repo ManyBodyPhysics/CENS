@@ -1,7 +1,7 @@
 # ManybodyCodes
 This repository contains several sets of many-body codes developed by Morten Hjorth-Jensen and collaborators. 
 The codes amount to several man-years of labor and are made available under the 
-GNU  GPL v.3 public license settings. Read carefully the license instructions and do respect them.
+GNU  GPL v.3 public license settings. Read carefully the license instructions at https://github.com/ManyBodyPhysics/ManybodyCodes/blob/master/LICENSE and do respect them.
 When using the codes included in this library, please cite the github link and the publications and authors listed 
 under the various types of many codes
 Presently this library contains 
