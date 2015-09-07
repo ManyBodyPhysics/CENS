@@ -1,0 +1,68 @@
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^124
+
+\* The particle number: 8
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 4
+\* Total parity (+, -): +
+
+\* The number of particle j-orbits: 5
+
+	     <n  l  2*j   min_part  max_part energy:>
+\* Orbit:     1  2   5       0         6      1.655
+\* Orbit:     2  0   1       0         2      0.332
+\* Orbit:     0  4   7       0         8      2.434
+\* Orbit:     1  2   3       0         4      0.000
+\* Orbit:     0  5  11       0        12      0.065
+
+
+
+\* Type of effective interaction: 1
+\* Input V-effective matrix element: nn132-3order.dat
+
+\* Center_of_Mass matrix elements included(yes = 1, no = 0): 0
+\* If(yes): Filename Center_of_Mass matrix elements: 
+
+
+
+\* Type of calculation process: random-start
+
+
+
+\* Max. file size for nondiag <SD|OP|SD> in Gb (small 0 - large > 0): 10
+\* Max. file size for lanczos vectors in Gb    (small 0 - large > 0):  10
+
+
+\* Maximum Lanczos iterations (<1000): 100
+\* Wanted number of converged eigenstates: 2
+
+
+                            -----  Results  ----
+
+single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  5  -  11   11   0.07 *    8     1    0  4  +   7    3   2.43
+  1     0    0  5  -  11    9   0.07 *    9     2    1  2  +   5    3   1.66
+  2     0    0  5  -  11    7   0.07 *   10     3    1  2  +   3    3   0.00
+  3     1    0  4  +   7    7   2.43 *   11     0    0  5  -  11    1   0.07
+  4     0    0  5  -  11    5   0.07 *   12     1    0  4  +   7    1   2.43
+  5     1    0  4  +   7    5   2.43 *   13     2    1  2  +   5    1   1.66
+  6     2    1  2  +   5    5   1.66 *   14     3    1  2  +   3    1   0.00
+  7     0    0  5  -  11    3   0.07 *   15     4    2  0  +   1    1   0.33
+
+Number of slater determinants = 309083
+
+Stored nondiag <SD'|Veff|SD> in memory
+Number of stored <SD'|Veff|initSD>: 41562787
+Up to and including |initSD> = 230355 - Last |initSD> =  309083
+Time used : 0 hour 1 min 33 sec
+
+
+Stored nondiag  <SD'|Veff|SD>stored on file
+Number of stored <SD'|Veff|initSD>: 8959469
+Up to and including |initSD> = 309083 - Last |initSD> =  309083
+Time used : 0 hour 1 min 0 sec

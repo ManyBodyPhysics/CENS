@@ -1,0 +1,32 @@
+     
+
+\* Shell model calculation of identical particle system -- title: Sn^127
+
+\* The particle number: 5
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 19
+\* Total parity (+, -): +
+
+\* The number of particle j-orbits: 5
+
+	     <n  l  2*j   min_part  max_part energy:>
+\* Orbit:     1  2   5       0         6      1.655
+\* Orbit:     2  0   1       0         2      0.332
+\* Orbit:     0  4   7       0         8      2.434
+\* Orbit:     1  2   3       0         4      0.000
+\* Orbit:     0  5  11       0        12      0.065
+
+
+
+\* Type of effective interaction: 1
+\* Input V-effective matrix element: nn132-3order.dat
+
+\* Center_of_Mass matrix elements included(yes = 1, no = 0): 0
+\* If(yes): Filename Center_of_Mass matrix elements: 
+
+
+
+\* Type of calculation process: random-start
+
+

@@ -1,0 +1,138 @@
+     
+
+\* Shell model calculation of identical particle system -- title: Sn105
+
+\* The particle number: 5
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 1
+\* Total parity (+, -): +
+
+\* The number of particle j-orbits: 5
+
+	     <n  l  2*j   min_part  max_part energy:>
+\* Orbit:     1  2   5       0         6      0.000
+\* Orbit:     2  0   1       0         2      2.450
+\* Orbit:     0  4   7       0         8      0.200
+\* Orbit:     1  2   3       0         4      2.550
+\* Orbit:     0  5  11       0        12      3.000
+
+
+\* Type of effective interaction: 1
+\* Input V-effective matrix element: vsn100.dat
+
+\* Center_of_Mass matrix elements included(yes = 1, no = 0): 0
+\* If(yes): Filename Center_of_Mass matrix elements: 
+
+
+
+\* Type of calculation process: random-start
+
+
+
+\* Max. file size for nondiag <SD|OP|SD> in Gb (small 0 - large > 0): 10
+\* Max. file size for lanczos vectors in Gb    (small 0 - large > 0):  10
+
+
+\* Maximum Lanczos iterations (<1000): 200
+\* Wanted number of converged eigenstates: 20
+
+
+                            -----  Results  ----
+
+single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  5  -  11   11   3.00 *    8     1    0  4  +   7    3   0.20
+  1     0    0  5  -  11    9   3.00 *    9     2    1  2  +   5    3   0.00
+  2     0    0  5  -  11    7   3.00 *   10     3    1  2  +   3    3   2.55
+  3     1    0  4  +   7    7   0.20 *   11     0    0  5  -  11    1   3.00
+  4     0    0  5  -  11    5   3.00 *   12     1    0  4  +   7    1   0.20
+  5     1    0  4  +   7    5   0.20 *   13     2    1  2  +   5    1   0.00
+  6     2    1  2  +   5    5   0.00 *   14     3    1  2  +   3    1   2.55
+  7     0    0  5  -  11    3   3.00 *   15     4    2  0  +   1    1   2.45
+
+Number of slater determinants = 7451
+
+Stored nondiag <SD'|Veff|SD> in memory
+Number of stored <SD'|Veff|initSD>: 598213
+Up to and including |initSD> = 7451 - Last |initSD> =  7451
+Time used : 0 hour 0 min 0 sec
+
+
+Stored nondiag <SD'|Ang|SD> in memory
+Number of stored <SD'|Ang|initSD>: 50171
+Up to and including |initSD> = 7451 - Last |initSD> =  7451
+Time used : 0 hour 0 min 0 sec
+
+
+The Lanczos iteration process has reached  maximum iterartions = 200 - specified in input data
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -4.1690
+
+E(0)=    0.0000  <J**2> =  8.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.220     1.899     2.677     0.143     0.060    
+
+E(1)=    0.3710  <J**2> = 15.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.223     2.074     2.472     0.164     0.066    
+
+E(2)=    0.7241  <J**2> =  3.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.135     1.927     2.670     0.149     0.120    
+
+E(3)=    1.2969  <J**2> =  3.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.128     1.898     2.589     0.231     0.153    
+
+E(4)=    1.3088  <J**2> =  8.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.142     2.450     2.100     0.208     0.099    
+
+E(5)=    1.3135  <J**2> = 24.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.116     1.982     2.701     0.148     0.052    
+
+E(6)=    1.4327  <J**2> =  0.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.140     2.246     2.201     0.213     0.200    
+
+E(7)=    1.5765  <J**2> = 35.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.121     1.876     2.767     0.122     0.114    
+
+E(8)=    1.6294  <J**2> = 15.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.115     1.938     2.617     0.209     0.122    
+
+E(9)=    1.6764  <J**2> =  8.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.104     1.758     2.829     0.204     0.105    
+
+E(10)=    1.7090  <J**2> = 15.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.126     2.128     2.504     0.155     0.088    
+
+E(11)=    1.8132  <J**2> = 24.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.126     2.015     2.678     0.125     0.056    
+
+E(12)=    1.8149  <J**2> = 15.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.093     2.007     2.646     0.156     0.098    
+
+E(13)=    1.8431  <J**2> =  0.7500  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.181     1.581     2.207     0.244     0.787    
+
+E(14)=    1.8449  <J**2> =  8.7475  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.126     2.386     2.230     0.184     0.073    
+
+E(15)=    1.9683  <J**2> =  3.7593  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.175     1.791     2.103     0.849     0.082    
+
+E(16)=    1.9770  <J**2> = 24.7467  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.111     1.998     2.661     0.143     0.087    
+
+E(17)=    1.9976  <J**2> =  8.7764  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.099     1.425     3.277     0.106     0.093    
+
+E(18)=    2.0022  <J**2> = 48.6350  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.096     1.994     2.774     0.091     0.044    
+
+E(19)=    2.0943  <J**2> = 63.7437  11/2(-)    7/2(+)    5/2(+)    3/2(+)    1/2(+) 
+                    N(j):           0.114     2.089     2.678     0.088     0.031    
+
+Total shell model process time used 0 hour 0 min 0 sec
