@@ -1,4 +1,4 @@
-# ManybodyCodes
+# CENS=Computational Environment for Nuclear Structure
 This repository contains several sets of many-body codes developed by Morten Hjorth-Jensen and collaborators. 
 The codes amount to several man-years of labor and are made available under the 
 GNU  GPL v.3 public license settings. Read carefully the license instructions at https://github.com/ManyBodyPhysics/ManybodyCodes/blob/master/LICENSE and do respect them.
