@@ -5,8 +5,10 @@ GNU  GPL v.3 public license settings. Read carefully the license instructions an
 When using the codes included in this library, please cite the github link and the publications and authors listed 
 under the various types of many codes
 Presently this library contains 
-1) Full configuration interaction theory codes, both serial and parallel ones. Cite as:  
+
+* Full configuration interaction theory codes, both serial and parallel ones. Cite as:  
 T. Engeland and M. Hjorth-Jensen, the Oslo-FCI code, with link to the github address https://github.com/ManyBodyPhysics/ManybodyCodes/
-2) Many-body perturbation theory codes. Cite as: 
+
+* Many-body perturbation theory codes. Cite as: 
 M. Hjorth-Jensen, T.T.S. Kuo, and E. Osnes, Physics Reports 261, 125 (1995) including the above github address
 
