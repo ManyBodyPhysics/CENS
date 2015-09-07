@@ -1,0 +1,258 @@
+           ** All input data are identified through a text-line which
+           ** starts with the two symbols '/' and '*' and ends with ":" or ";"
+           ** Additional informative text may be included in the form
+           **        <........ Informative text....... >
+           ** 
+
+\* Shell model calculation of proton/neutron systemA -- title: NEWJUNE24-Zr94
+
+
+\* The proton number:   2
+\* The neutron number:  4
+
+\* Twice total projection of angular momentum: 0
+\* Total parity (+, -): +
+
+\* The number of proton particle j-orbits: 2
+	     <N  n  l  2*j   min_part  max_part energy:>
+\* Orbit_Z:   4  0  4   9       0        2        0.9
+\* Orbit_Z:   3  1  1   1       0        2        0.00
+
+\* The number of neutron particle j-orbits: 5
+             <N  n  l  2*j   min_part  max_part energy:>
+\* Orbit_N:   5  0  5   11      0         2     3.500            
+\* Orbit_N:   4  0  4    7      0         8     2.630           
+\* Orbit_N:   4  1  2    5      0         6     0.000.              
+\* Orbit_N:   4  1  2    3      0         4     2.230            
+\* Orbit_N:   4  2  0    1      0         2     1.260            
+
+
+<************* type of program process ***********>
+
+ <** Effective interaction Lanczo process     0  **>
+ <** Calculation of shell-model dimension     1	 **>
+
+
+\* Type of calculation process: 0
+
+      <***** Type of interaction ******>
+
+    <** Two-part veffJ    0 **>
+    <** Two-part veffM    1 **>
+    <** Three-part veffM  2 **>
+
+\* Type of effective interaction: 0
+
+\* Input proton-proton   V-effective:    veff-sr88pp.dat
+\* Input neutron-neutron V-effective:    veff-sr88nn.dat
+\* Input proton-neutron  V-effective:    veff-sr88pn.dat
+
+
+<** Temp. files for storage of nondiag_matr_elem and Lanczos vector **>
+
+\* Memory size to store nondiag <pn_SD'|OP|pn_SD> in MB (default 500 MB):1000
+
+\* Max file size for lanczos vectors    in Gb (default 10 GB): 2
+
+<** Energy eigenvalue parameters **>
+
+\* Maximum Lanczos iterations (<1000): 100
+\* Wanted number of converged eigenstates: 10
+
+<*** END_OF_INPUT_FILE ***> 
+<*** END_OF_INPUT_FILE ***> 
+
+                            -----  Results  ----
+
+  Proton single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb N  n  l par 2*j 2*m energy *  m_orb j_orb N  n  l par 2*j 2*m energy
+
+ 0     0    4  0  4  +   9    9   0.90 *   3     0    4  0  4  +   9    3    0.90
+ 1     0    4  0  4  +   9    7   0.90 *   4     0    4  0  4  +   9    1    0.90
+ 2     0    4  0  4  +   9    5   0.90 *   5     1    3  1  1  -   1    1    0.00
+
+  Neutron single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb N  n  l par 2*j 2*m energy *  m_orb j_orb N  n  l par 2*j 2*m energy
+
+ 0     0    5  0  5  -  11   11   3.50 *   8     1    4  0  4  +   7    3    2.63
+ 1     0    5  0  5  -  11    9   3.50 *   9     2    4  1  2  +   5    3    0.00
+ 2     0    5  0  5  -  11    7   3.50 *  10     3    4  1  2  +   3    3    2.23
+ 3     1    4  0  4  +   7    7   2.63 *  11     0    5  0  5  -  11    1    3.50
+ 4     0    5  0  5  -  11    5   3.50 *  12     1    4  0  4  +   7    1    2.63
+ 5     1    4  0  4  +   7    5   2.63 *  13     2    4  1  2  +   5    1    0.00
+ 6     2    4  1  2  +   5    5   0.00 *  14     3    4  1  2  +   3    1    2.23
+ 7     0    5  0  5  -  11    3   3.50 *  15     4    4  2  0  +   1    1    1.26
+
+Number of proton |SD_Z> configurations = 66
+Number of neutron |SD_N> configurations = 26355
+Total number of   |SD_ZN> configurations = 70808
+ and with oscillator restriction         = 70808
+
+
+
+
+Block data for MASTER node with Rank = 0
+
+Total processes = 4
+sdBlock[4].startSDnum = 909180977
+sdBlock[4].endSDnum   = 33
+sdBlock[4].totNumSD  = 858600497
+
+
+Block data for MASTER node with Rank = 0
+
+Total processes = 4
+sdBlock[4].startSDnum = 909180977
+sdBlock[4].endSDnum   = 33
+sdBlock[4].totNumSD  = 858600497
+
+
+Reserved permanent memory: numElem = 83000000
+
+Stored nondiag matrix elements in memory
+Number of stored <SD'|VEFF_INT|initSDZ,SDN>: 1678851
+Up to and including |initSD> = 0 - Last |initSD> =  70808
+Wall time used : 0 hour 0 min 4 sec
+CPU time used : 0 hour 0 min 4 sec
+
+Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time H()*Vec()
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time file reading
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec  
+
+Stored no 25 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time H()*Vec()
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time file reading
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec  
+
+Stored no 50 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time H()*Vec()
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time file reading
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec  
+
+Stored no 75 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time H()*Vec()
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time file reading
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec  
+
+Stored no 100 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time H()*Vec()
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Test time file reading
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec  
+
+Total time used for Lanczos iteration proc
+Wall time: 0 hour 0 min 6 sec
+CPU  time: 0 hour 0 min 6 sec
+
+
+Reserved permanent memory: numElem = 83000000
+
+Stored nondiag matrix elements in memory
+Number of stored <SD'|ANG_INT|initSDZ,SDN>: 178828
+Up to and including |initSD> = 0 - Last |initSD> =  70808
+Wall time used : 0 hour 0 min 0 sec
+CPU time used : 0 hour 0 min 0 sec
+
+Total time used for Lanczos iteration proc
+Wall time: 0 hour 0 min 6 sec
+CPU  time: 0 hour 0 min 6 sec
+
+
+The Lanczos iteration process has reached 
+maximum iterations = 100 - specified in input data
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -9.9164
+
+E(0)=  0.0000 <J**2> =  0.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.283 1.717 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.118 0.115 3.459 0.173 0.134 
+
+E(1)=  0.9728 <J**2> =  6.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.237 1.763 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.063 0.046 3.631 0.107 0.153 
+
+E(2)=  1.4036 <J**2> = 20.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.195 1.805 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.057 0.036 3.783 0.073 0.050 
+
+E(3)=  1.9811 <J**2> =  6.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.489 1.511 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.088 0.110 2.785 0.163 0.853 
+
+E(4)=  2.0830 <J**2> =  0.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    1.675 0.325 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.106 0.743 2.457 0.361 0.332 
+
+E(5)=  2.4659 <J**2> = 12.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.285 1.715 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.067 0.050 2.824 0.129 0.930 
+
+E(6)=  2.6236 <J**2> =  2.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.285 1.715 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.055 0.028 2.909 0.071 0.937 
+
+E(7)=  2.6548 <J**2> = 19.9630
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.407 1.593 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.065 0.055 2.839 0.164 0.878 
+
+E(8)=  2.6571 <J**2> =  6.0392
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    0.559 1.441 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.075 0.148 2.687 0.190 0.899 
+
+E(9)=  2.8313 <J**2> =  6.0000
+Proton single-part.  distrib  9/2+  1/2-
+                     N(j)    1.466 0.534 
+Neutron single-part. distrib 11/2-  7/2+  5/2+  3/2+  1/2+
+                     N(j)    0.080 0.614 2.479 0.376 0.451 
+
+Total shell model process wall time used 0 hour 0 min 12 sec
+Total shell model process cpu time used 0 hour 0 min 12 sec

@@ -1,0 +1,42 @@
+#!/bin/bash
+# Job name
+#SBATCH --job-name=Sn106
+
+# Project
+#SBATCH  --account=nn2977k
+#
+# Wall time clock limit
+#SBATCH --time=00:03:00
+#
+# Max memory usage per core  (MB)
+#SBATCH  --mem-per-cpu=2G
+#
+# Number of cores
+#SBATCH --ntasks=10
+
+
+#       SBATCH --constraint=ib
+
+##  Set up job environment
+source /cluster/bin/jobsetup
+
+module load intel/2013.3
+module load intelmpi.intel/4.0u3
+
+## Copy files to work directory
+cp $SUBMITDIR/PAR-lanczo                        $SCRATCH
+cp $SUBMITDIR/sn100-modelP.dat                  $SCRATCH
+cp $SUBMITDIR/sn100_thirdgmat10hbar_n3lo_nn.dat $SCRATCH
+
+# Ensure the checkpoint file is copied back, no matter how
+# we terminate (unless the node crashes).
+
+chkfile Sn106-result.dat
+
+chkfile Sn106Rank0-eigen-vectors.dat1
+
+cd $SCRATCH
+
+mpirun -n 10 ./PAR-lanczo sn100-modelP.dat
+
+#END OF SCRIPT

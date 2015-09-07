@@ -1,0 +1,10 @@
+Starting job 3434808 ("Sn106") on c5-[9-10,14,27] at Fri Oct 4 11:03:27 CEST 2013
+
+Job step resource usage:
+       JobID    JobName  AllocCPUS  MaxVMSize     MaxRSS    Elapsed ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- -------- 
+3434808           Sn106         10                         00:00:10      0:0 
+3434808.0          true          4    176116K      1088K   00:00:00      0:0 
+3434808.1     pmi_proxy          1  15768364K     72648K   00:00:03      0:0 
+
+Job 3434808 ("Sn106") completed on c5-[9-10,14,27] at Fri Oct 4 11:03:36 CEST 2013

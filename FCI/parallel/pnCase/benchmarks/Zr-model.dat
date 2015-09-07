@@ -1,0 +1,62 @@
+           ** All input data are identified through a text-line which
+           ** starts with the two symbols '/' and '*' and ends with ":" or ";"
+           ** Additional informative text may be included in the form
+           **        <........ Informative text....... >
+           ** 
+
+\* Shell model calculation of proton/neutron systemA -- title: NEWJUNE24-Zr94
+
+
+\* The proton number:   2
+\* The neutron number:  4
+
+\* Twice total projection of angular momentum: 0
+\* Total parity (+, -): +
+
+\* The number of proton particle j-orbits: 2
+	     <N  n  l  2*j   min_part  max_part energy:>
+\* Orbit_Z:   4  0  4   9       0        2        0.9
+\* Orbit_Z:   3  1  1   1       0        2        0.00
+
+\* The number of neutron particle j-orbits: 5
+             <N  n  l  2*j   min_part  max_part energy:>
+\* Orbit_N:   5  0  5   11      0         2     3.500            
+\* Orbit_N:   4  0  4    7      0         8     2.630           
+\* Orbit_N:   4  1  2    5      0         6     0.000.              
+\* Orbit_N:   4  1  2    3      0         4     2.230            
+\* Orbit_N:   4  2  0    1      0         2     1.260            
+
+
+<************* type of program process ***********>
+
+ <** Effective interaction Lanczo process     0  **>
+ <** Calculation of shell-model dimension     1	 **>
+
+
+\* Type of calculation process: 0
+
+      <***** Type of interaction ******>
+
+    <** Two-part veffJ    0 **>
+    <** Two-part veffM    1 **>
+    <** Three-part veffM  2 **>
+
+\* Type of effective interaction: 0
+
+\* Input proton-proton   V-effective:    veff-sr88pp.dat
+\* Input neutron-neutron V-effective:    veff-sr88nn.dat
+\* Input proton-neutron  V-effective:    veff-sr88pn.dat
+
+
+<** Temp. files for storage of nondiag_matr_elem and Lanczos vector **>
+
+\* Memory size to store nondiag <pn_SD'|OP|pn_SD> in MB (default 500 MB):1000
+
+\* Max file size for lanczos vectors    in Gb (default 10 GB): 2
+
+<** Energy eigenvalue parameters **>
+
+\* Maximum Lanczos iterations (<1000): 100
+\* Wanted number of converged eigenstates: 10
+
+<*** END_OF_INPUT_FILE ***> 

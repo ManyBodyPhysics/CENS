@@ -1,0 +1,275 @@
+\* The particle number: 6
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 0
+\* Total parity (+, -): +
+
+\* The number of particle j-orbits: 5
+
+	     <n  l  2*j   min_part  max_part energy:
+\* Orbit:     1  2   3       0         4      2.550
+\* Orbit:     0  5  11       0        12      3.000.
+\* Orbit:     2  0   1       0         2      2.450
+\* Orbit:     1  2   5       0         6      0.000
+\* Orbit:     0  4   7       0         8      0.200
+
+<***** Type of interaction ******  value ****>
+    <** Two-part   veffJ interaction:             1 **>
+    <** Two-part   veffM interaction:             2 **>
+    <** Converted Two-part pluss three-part elem  3 **>
+
+\* Type of effective interaction: 1
+\* Input V-effective matrix element: sn100_thirdgmat10hbar_n3lo_nn.dat
+
+
+\* Center_of_Mass matrix elements included(yes = 1, no = 0): 0
+\* If(yes): Filename Center_of_Mass matrix elements: 
+
+<**************** Type of calculation ****************     Symbol   ********>
+    <** Calculation to find the shell model dimension    --> dimension	  **>
+    <** Lanczos iteration based on random initial vector --> random-start **>
+
+\* Type of calculation process: random-start
+
+
+<** Temporary files for storage of Lanczos vector **>
+
+\* Max. file size for lanczos vectors in Gb    (default 10): 1
+
+\* Temporary memory to store nondiag <SD'|OP|SD> in MB (default 100 MB): 1500
+
+
+<** Energy eigenvalue parameters **>
+
+\* Maximum Lanczos iterations (<1000):  200
+\* Wanted number of converged eigenstates: 10
+
+<** END_OF_INPUT_FILE **>
+
+
+
+             <***** R E S U L T S *****>
+
+     NumProcs = 10
+
+
+
+
+single-particle orbits for m >= 1/2 (symmetric around zero)
+
+m_orb j_orb osc l par 2*j 2*m energy *  m_orb j_orb osc l par 2*j 2*m energy
+
+  0     0    0  5  -  11   11   3.00 *    8     1    0  4  +   7    3   0.20
+  1     0    0  5  -  11    9   3.00 *    9     2    1  2  +   5    3   0.00
+  2     0    0  5  -  11    7   3.00 *   10     3    1  2  +   3    3   2.55
+  3     1    0  4  +   7    7   0.20 *   11     0    0  5  -  11    1   3.00
+  4     0    0  5  -  11    5   3.00 *   12     1    0  4  +   7    1   0.20
+  5     1    0  4  +   7    5   0.20 *   13     2    1  2  +   5    1   0.00
+  6     2    1  2  +   5    5   0.00 *   14     3    1  2  +   3    1   2.55
+  7     0    0  5  -  11    3   3.00 *   15     4    2  0  +   1    1   2.45
+
+Total number of asymmetric slater determinants   =   15282
+Total number of symmetric slater determinants    =     560
+Total number of slater determinants              =   31124
+
+Block data for process with NumProcs = 10
+
+Block data for process with Rank = 0
+sdBlock[0].startSDnum = 0
+sdBlock[0].endSDnum   = 1585
+sdBlock[0].num_asym   = 1585
+sdBlock[0].num_sym    = 0
+sdBlock[0].tot_numSD  = 1585
+
+
+Rank0 Stored nondiag matrix elements in memory
+Number of stored <SD'|Veff|initSD>: 173069
+Up to and including |initSD> = 15840 - Last |initSD> =  15842
+ Memory requirement = 2076 KB
+Wall time used : 0 hour 0 min 0 sec
+CPU time used : 0 hour 0 min 0 sec
+
+Rank2:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 2 Test time H()*Vec()
+Rank2: Wall time: 0 hour 0 min 0 sec
+Rank2: CPU  time: 0 hour 0 min 0 sec
+
+Rank4:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 4 Test time H()*Vec()
+Rank4: Wall time: 0 hour 0 min 0 sec
+Rank4: CPU  time: 0 hour 0 min 0 sec
+
+Rank3:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 3 Test time H()*Vec()
+Rank3: Wall time: 0 hour 0 min 0 sec
+Rank3: CPU  time: 0 hour 0 min 0 sec
+
+Rank6:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 6 Test time H()*Vec()
+Rank6: Wall time: 0 hour 0 min 0 sec
+Rank6: CPU  time: 0 hour 0 min 0 sec
+
+Rank5:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 5 Test time H()*Vec()
+Rank5: Wall time: 0 hour 0 min 0 sec
+Rank5: CPU  time: 0 hour 0 min 0 sec
+
+Rank8:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 8 Test time H()*Vec()
+Rank8: Wall time: 0 hour 0 min 0 sec
+Rank8: CPU  time: 0 hour 0 min 0 sec
+
+Rank1:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 1 Test time H()*Vec()
+Rank1: Wall time: 0 hour 0 min 0 sec
+Rank1: CPU  time: 0 hour 0 min 0 sec
+
+Rank9:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 9 Test time H()*Vec()
+Rank9: Wall time: 0 hour 0 min 0 sec
+Rank9: CPU  time: 0 hour 0 min 0 sec
+
+Rank7:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 7 Test time H()*Vec()
+Rank7: Wall time: 0 hour 0 min 0 sec
+Rank7: CPU  time: 0 hour 0 min 0 sec
+
+Rank0:Stored no 2 energy lanczo vectors
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+Rank 0 Test time H()*Vec()
+Rank0: Wall time: 0 hour 0 min 0 sec
+Rank0: CPU  time: 0 hour 0 min 0 sec
+
+Rank0:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 0 Test time H()*Vec()
+Rank0: Wall time: 0 hour 0 min 0 sec
+Rank0: CPU  time: 0 hour 0 min 0 sec
+
+Rank1:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 1 Test time H()*Vec()
+Rank1: Wall time: 0 hour 0 min 0 sec
+Rank1: CPU  time: 0 hour 0 min 0 sec
+
+Rank4:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 4 Test time H()*Vec()
+Rank4: Wall time: 0 hour 0 min 0 sec
+Rank4: CPU  time: 0 hour 0 min 0 sec
+
+Rank8:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 8 Test time H()*Vec()
+Rank8: Wall time: 0 hour 0 min 0 sec
+Rank8: CPU  time: 0 hour 0 min 0 sec
+
+Rank9:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 9 Test time H()*Vec()
+Rank9: Wall time: 0 hour 0 min 0 sec
+Rank9: CPU  time: 0 hour 0 min 0 sec
+
+Rank2:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 2 Test time H()*Vec()
+Rank2: Wall time: 0 hour 0 min 0 sec
+Rank2: CPU  time: 0 hour 0 min 0 sec
+
+Rank6:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 6 Test time H()*Vec()
+Rank6: Wall time: 0 hour 0 min 0 sec
+Rank6: CPU  time: 0 hour 0 min 0 sec
+
+Rank3:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 3 Test time H()*Vec()
+Rank3: Wall time: 0 hour 0 min 0 sec
+Rank3: CPU  time: 0 hour 0 min 0 sec
+
+Rank5:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 5 Test time H()*Vec()
+Rank5: Wall time: 0 hour 0 min 0 sec
+Rank5: CPU  time: 0 hour 0 min 0 sec
+
+Rank7:Stored no 123 energy lanczo vectors
+Wall time: 0 hour 0 min 0 sec
+CPU  time: 0 hour 0 min 0 sec
+Rank 7 Test time H()*Vec()
+Rank7: Wall time: 0 hour 0 min 0 sec
+Rank7: CPU  time: 0 hour 0 min 0 sec
+Rank0: Total time used for Lanczos iteration proc
+Wall time: 0 hour 0 min 1 sec
+CPU  time: 0 hour 0 min 1 sec
+
+
+The Lanczos iteration process has converged  after 122 iterations.
+
+Final Eigenvalues
+The total parity is positive
+
+
+The ground state energy =   -5.7271
+
+E(0)=  0.0000 <J**2> =  0.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.346 1.861 3.428 0.260 0.105 
+
+E(1)=  1.5264 <J**2> =  6.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.256 2.139 3.197 0.254 0.154 
+
+E(2)=  1.7101 <J**2> = -0.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.209 1.171 4.401 0.156 0.063 
+
+E(3)=  2.1913 <J**2> = 20.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.222 2.029 3.481 0.184 0.084 
+
+E(4)=  2.3291 <J**2> =  6.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.188 2.027 3.439 0.198 0.148 
+
+E(5)=  2.3350 <J**2> = 42.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.196 1.986 3.599 0.154 0.065 
+
+E(6)=  2.3498 <J**2> = 20.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.182 1.833 3.744 0.163 0.078 
+
+E(7)=  2.5524 <J**2> =  6.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.173 1.739 3.798 0.196 0.093 
+
+E(8)=  2.6501 <J**2> = 20.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.160 2.011 3.501 0.238 0.090 
+
+E(9)=  2.9043 <J**2> =  0.0000 11/2-  7/2+  5/2+  3/2+  1/2+
+                 N(j):          0.270 2.672 2.796 0.194 0.068 
+
+Total shell model process wall time used 0 hour 0 min 2 sec
+Total shell model process cpu time used 0 hour 0 min 1 sec
