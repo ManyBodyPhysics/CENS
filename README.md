@@ -11,5 +11,9 @@ Presently this library contains
 T. Engeland and M. Hjorth-Jensen, the Oslo-FCI code, with link to the github address https://github.com/ManyBodyPhysics/ManybodyCodes/
 
 * Many-body perturbation theory codes. Cite as: 
-M. Hjorth-Jensen, T.T.S. Kuo, and E. Osnes, Physics Reports 261, 125 (1995) including the above github address
+M. Hjorth-Jensen, T.T.S. Kuo, and E. Osnes, Physics Reports 261, 125 (1995) including the above github address. These codes include codes to renormalize nucleon-nucleon forces (with several interaction models) and codes to produce effective interactions for a given model space based on many-body perturbation theory. How to use these codes is described in the following tutorials. 
 
+* Codes for fitting polynomials and performing calculations of properties of neutrons stars or white dwarf stars. Cite as: 
+H. Heiselberg and M. Hjorth-Jensen, Physics Reports 328, 237 (2000), with link to the github address https://github.com/ManyBodyPhysics/ManybodyCodes/
+
+* To come: Coupled-cluster codes and FCIQMC codes for finite systems like quantum dots or nuclei and inifnite matter.

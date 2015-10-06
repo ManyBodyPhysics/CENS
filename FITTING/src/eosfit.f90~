@@ -115,7 +115,7 @@
       ALLOCATE ( w(number_terms) )
       ALLOCATE (n(number_of_data), e(number_of_data), sig(number_of_data) ) 
       DO i=1,number_of_data
-         READ (5,*)n(i) , e(i)
+         READ (5,*)n(i) , e(i), sig(i)
       ENDDO
       CALL svdfit(n,e,sig,number_of_data,polynom_terms, &
                   number_terms, &
