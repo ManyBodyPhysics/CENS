@@ -329,7 +329,7 @@ END SUBROUTINE setup_com_vlowk
 !     Obtain the bare interaction in a harmonic oscillator 
 !     basis plus the kinetic energy and the Coulomb part. It contains
 !     also the CoM correction to the relative coordinates. The latter depends
-!     on the mass number of the nucleus
+!     on the mass number of the nucleusSUBROUTINE vlowk_channel(i,vint)
 ! 
 SUBROUTINE vlowk_channel(i,vint)
   USE wave_functions
@@ -366,8 +366,6 @@ SUBROUTINE vlowk_channel(i,vint)
   IF ((type_of_pot == 'OPEP').OR.(type_of_pot == 'Tensorinteraction')   &
        .OR.(type_of_pot == 'LSinteraction') ) THEN
      heff = vzz
-  ELSEIF (type_of_renormv =='vbare') THEN
-      heff = vzz
   ELSE
      ! get similarity transformed interaction
      CALL vlowk_mtx(ncoup,vzz,heff,i)

@@ -45,7 +45,7 @@ MODULE constants
   !    determine the type of Pauli operator
   CHARACTER (LEN=100), PUBLIC :: pauli_operator
   ! the nn potential, cd-bonn, idaho-a, idaho-b etc, with csb and cib options
-  CHARACTER (LEN=100), PUBLIC  :: type_of_pot, chiral_pot, csb, cib
+  CHARACTER (LEN=100), PUBLIC  :: type_of_pot, csb, cib
   ! test for square Pauli operator
   LOGICAL, PUBLIC :: square_calculation
   ! arrays of starting energies
@@ -55,15 +55,17 @@ MODULE constants
   ! oscillator energy and oscillator length
   REAL(DP), PUBLIC :: hbar_omega, oscl, cutoff, atomic_strength
   ! nucleon masses for different isospin channels
-  ! these might be changed when running with an optimized
-  ! chiral potential, since the p_mass/p_massave are set to the
-  ! values used in the potential. See chp_presets.f90
-  REAL(DP), PUBLIC, DIMENSION(-1:1) :: p_mass = (/938.27231_dp, 938.918725_dp, 939.56563_dp/)
-  REAL(DP) , PUBLIC :: p_massave = 938.918725_dp  !   2006 value of average (m_p+m_n)/2
+  REAL(DP), PUBLIC, DIMENSION(-1:1), PARAMETER:: p_mass = &
+       (/938.27231_dp, 938.918725_dp, 939.56563_dp/)
+! If you want to have an average mass, use the variables here, given by the 
+! average neutron and proton masses.
+!       (/938.918725_dp, 938.918725_dp, 938.918725_dp, 1232.0_dp, 1232.0_dp/)
+  REAL(DP) , PARAMETER, PUBLIC :: p_massave =   938.918725_dp  !   2006 value of average (m_p+m_n)/2
   REAL(DP) , PARAMETER, PUBLIC :: e_mass =   510998.918_dp  !   2006 value for electron mass  in eV
   REAL(DP), PARAMETER, PUBLIC ::  bohr_r=0.05291772108_dp  ! Bohr radius in nm
   REAL(DP), PARAMETER, PUBLIC :: theta_rot = 0.0_dp! 0.125_dp
   REAL(DP), PARAMETER, PUBLIC :: hbarc = 197.326968_dp    !  2006 value
+  REAL(DP), PARAMETER, PUBLIC :: hb2ip = hbarc*hbarc/p_massave ! only for nuclei
   REAL(DP), PUBLIC, PARAMETER :: pi = 3.141592741012573_dp
   REAL(DP), PUBLIC, PARAMETER :: pi_2 = 1.570796370506287_dp
   REAL(DP), PUBLIC, PARAMETER :: pi_4 = 0.7853981852531433_dp

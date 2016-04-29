@@ -51,6 +51,8 @@ PROGRAM  v_effective
   outputfile = ini_read_string('output_run')
   OPEN(unit=6,file=outputfile)
   kread = 14; kwrite = 6
+  threebodyfile = ini_read_string('threebody_file')
+  OPEN(UNIT=14,file=threebodyfile)
   !     file for the renormalized interaction, unformatted output
   renorminteraction_file = Ini_Read_String('renorminteraction_file')
 ! in case of binary  OPEN(UNIT=7,FILE=renorminteraction_file,form='binary')

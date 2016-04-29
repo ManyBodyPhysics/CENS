@@ -436,8 +436,7 @@ SUBROUTINE nocore_channel(i,vint,kinetic_energy)
         k2=ket
         c=rel_conf%rel_ab(i,k2)
         np=relcm_sp_data%nrel(c)        
-        lb=relcm_sp_data%lrel(c)
-        !  No dependence of the bare interaction upon the CoM momenta
+        lb=relcm_sp_data%lrel(c)        !  No dependence of the bare interaction upon the CoM momenta
         !  The Hamiltonian is also diagonal in L and N 
         vsum = 0.; e_kin =0.; e_r2 = 0.
         IF ((np+np+lb) > nlmax) CYCLE
@@ -743,7 +742,6 @@ SUBROUTINE nocorepotential_interface(ncoup,vkk,ichan)
   USE relcm_gmatrix
   USE partial_waves
   USE constants
-  USE idaho_chiral_potential
   IMPLICIT NONE
   INTEGER :: i,j, ncoup, k, l, jxx, ichan, inn, isospin_tz, spin, &
        n1, ix, iy
@@ -753,22 +751,11 @@ SUBROUTINE nocorepotential_interface(ncoup,vkk,ichan)
   COMMON /cpot/ v(6),xmev,ymev
   common /cpts/   q(97),c,n1,ix,iy
   COMMON /cstate/ jxx, heform, sing, trip, coup, endep, label
-  ! n2lo500-pounders read/write stuff
-  common /crdwrt/ kread,kwrite
-  INTEGER :: kread, kwrite
-  !
-  ! chp stuff
-  !
-  INTEGER :: tz, T
-  !
   LOGICAL :: sing, trip, coup, heform, endep
   REAL(KIND=8), DIMENSION(ncoup*n_rel,ncoup*n_rel), INTENT(OUT) :: vkk
   REAL(KIND=8) :: v00, v11, v12, v21, v22, fmult, besl, bs, b11, b12, b21, b22
   REAL(KIND=8) :: xb(500), wb(500), v8(500,2,2), temp(500,2,2)
   INTEGER :: j1,l1,l2,s1,isot,m,nt,tz1,tz2,lpot
-
-  kread=5
-  kwrite=6
 
   heform=.FALSE.
   jxx=jang_rel(ichan)
@@ -783,44 +770,6 @@ SUBROUTINE nocorepotential_interface(ncoup,vkk,ichan)
   CASE('Idaho-B')
      inn = 2
   CASE('n3lo')
-     SELECT CASE ( isospin_tz)
-     CASE (-1)
-        IF ( (csb == 'csb').AND.(cib == 'cib'))       inn = 1    !  pp case = 1
-        IF ( (csb == 'no-csb').AND.(cib == 'cib'))    inn = 3    !  pp case = nn case
-        IF ( (cib == 'no-cib').AND.(csb == 'no-csb')) inn = 2    !  pp case = pn case
-        tz1 = 1; tz2 = 1
-     CASE (0)
-        inn = 2    !  pn case = 2  if all inn=2, no CSB or ISB
-        tz1 = 1; tz2 = -1
-     CASE ( 1)
-        IF ( (csb == 'csb').AND.(cib == 'cib'))       inn = 3    !  nn case = 3
-        IF ( (csb == 'no-csb').AND.(cib == 'cib'))    inn = 3    !  nn case = pp case 
-        IF ( (cib == 'no-cib').AND.(csb == 'no-csb')) inn = 2    !  nn case = pn case
-        tz1 = -1; tz2 = -1
-     END SELECT
-  CASE('chiral-potential')
-     SELECT CASE ( isospin_tz)
-     CASE (-1)
-        T=1
-        IF ( (csb == 'csb').AND.(cib == 'cib'))       tz = -1    !  pp case = 1
-        IF ( (csb == 'no-csb').AND.(cib == 'cib'))    tz = +1    !  pp case = nn case
-        IF ( (cib == 'no-cib').AND.(csb == 'no-csb')) tz =  0    !  pp case = pn case
-     CASE (0)
-        IF ( ncoup == 1) THEN
-           l = jxx
-        ELSEIF ( ncoup == 2) THEN
-           l = jxx-1
-        END IF
-        IF (MOD(l+spin+1,2) == 0) T=0
-        IF (MOD(l+spin+0,2) == 0) T=1
-        tz = 0    !  pn case = 2  if all inn=2, no CSB or ISB
-     CASE ( 1)
-        T=1
-        IF ( (csb == 'csb').AND.(cib == 'cib'))       tz = +1    !  nn case = 3
-        IF ( (csb == 'no-csb').AND.(cib == 'cib'))    tz = -1    !  nn case = pp case 
-        IF ( (cib == 'no-cib').AND.(csb == 'no-csb')) tz =  0    !  nn case = pn case
-     END SELECT
-  CASE('n3lo3b')
      SELECT CASE ( isospin_tz)
      CASE (-1)
         IF ( (csb == 'csb').AND.(cib == 'cib'))       inn = 1    !  pp case = 1
@@ -946,12 +895,8 @@ SUBROUTINE nocorepotential_interface(ncoup,vkk,ichan)
               CALL idaho
            CASE('Idaho-B')
               CALL idaho
-           CASE('chiral-potential')
-              CALL chp(xmev,ymev,coup,spin,jxx,T,tz,v)
            CASE('n3lo')
-              CALL idaho_n3lo
-           CASE('n3lo3b')
-              CALL n3lo3b
+              CALL n3lo
            END SELECT
            IF (sing ) THEN
               vkk(j,i)=v(1)
@@ -966,7 +911,7 @@ SUBROUTINE nocorepotential_interface(ncoup,vkk,ichan)
         ENDDO
      ENDDO
   ENDIF
-  
+
 END SUBROUTINE nocorepotential_interface
 !
 !       Compute the renormalized interaction in oscillator space
