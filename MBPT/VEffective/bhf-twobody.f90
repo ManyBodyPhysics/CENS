@@ -82,7 +82,7 @@ SUBROUTINE twobody_contribution
                  CALL get_twobody_diagrams(sp_state_a,  &
                       sp_state_b, sp_state_c, sp_state_d, &
                       ang_mom, two_body,dg1, dg2, dg3, dg4, d3rd)
-                 q_box(bra_side,ket_side,:) = two_body(:)!+s_box(bra_side,ket_side,:)
+                 q_box(bra_side,ket_side,:) = two_body(:)+s_box(bra_side,ket_side,:)
                  totalunfolded(bra_side,ket_side)=two_body(n_startenergy_veff/2+1)
                  first(bra_side,ket_side)=dg1(n_startenergy_veff/2+1)
                  corepol(bra_side,ket_side)=dg2(n_startenergy_veff/2+1)
@@ -96,7 +96,7 @@ SUBROUTINE twobody_contribution
               sp_energy(:,:) = sp_energy(:,:) + s_box(:,:,n_startenergy_veff/2+1) 
               !  make the interaction hermitian
               final_v = nonhermitian_v
-!              CALL hermitize(nonhermitian_v,sp_energy,nconfs,final_v)
+              CALL hermitize(nonhermitian_v,sp_energy,nconfs,final_v)
            ELSE    
               CALL vfolded_diagrams(q_box,nconfs,folded_twobody)
               CALL vfolded_diagrams(s_box,nconfs,folded_onebody)
