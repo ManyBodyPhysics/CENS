@@ -1,4 +1,4 @@
-GCC= gcc -O3 -Wall
+GCC= cc -O3 -Wall
 
 Lanczo :		shell-model-main.o  shell-model-input.o\
 			id-sp-basis.o id-SD-basis.o\

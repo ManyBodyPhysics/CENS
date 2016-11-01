@@ -1,4 +1,4 @@
-GCC= gcc -O3 -Wall
+GCC= gcc -O2
 
 lanczo :	   	lanc-main.o  lanc-pn-SD-basis.o lanc-input.o lanc-pn-sp-basis.o\
 			lanc-pn-pot.o lanc-pn-store.o lanc-pn-process.o\
