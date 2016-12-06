@@ -11,7 +11,6 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <math.h>
-#include <malloc.h>
 #include <string.h> 
 #include <time.h>
 #include <ctype.h>
