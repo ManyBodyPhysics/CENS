@@ -752,7 +752,7 @@ static void writeNondiagSD_MatrElem(HEAD *head, SD_STORE *sdStore)
 void printMatrElemData(SD_BAS *sdBas, int storeType, SD_STORE *sdStore,
                                                           TID ex_time)
 {
-  char  text[5];
+  char  text[1000];
   FILE  *file_ptr;
 
   switch(sdStore->typeInt) {
