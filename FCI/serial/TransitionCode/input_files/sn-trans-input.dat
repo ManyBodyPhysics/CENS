@@ -1,0 +1,51 @@
+M1 transtion for: 103^Sn
+
+The basic shell model data:
+
+Initial proton number: 0
+Initial neutron number: 3
+Initial total angular momentum J is (even, odd): even
+Initial total projection of angular momentum (2*M): 1
+Initial total parity(+, -): +
+
+The number of neutron j-orbits: 3
+	n  l  2*j   min_part  max_part energy   (a = active, n = not active):
+	1  2   5       0         6     0.000             a
+	2  0   1       0         2     1.550             a
+        1  2   3       0         0     1.650             a
+
+The number of proton j-orbits: 1
+	n  l  2*j   min_part  max_part energy   (a = active, n = not active):
+	0  0   0       0         0     0.000             a
+
+
+
+Storage file for initial eigenvectors: 
+
+Final proton number: 0
+Final neutron number: 3
+Final total angular momentum J is (even, odd): even
+Final total projection of angular momentum (2*M): 1
+Final total parity(+, -): +
+
+Storage file for final eigenvectors: 
+
+Type of calculation (e2, e3, m1): e2
+
+E2 Neutron effective charge (unit e): 1.0
+E2 Proton effective charge (unit e):  1.0
+
+M1 Neutron effective gl (unit e): 0.0
+M1 Proton  effective gl (unit e): 1.0
+M1 Neutron effective gs (unit): -3.82
+M1 Proton  effective gs (unit):  5.58
+
+
+Number of transitions: 1
+
+Init(no 2J) Final(no 2J) (ground state no = 0):
+      1  3         0  5
+
+
+Output file for the results: 
+END_DATA
