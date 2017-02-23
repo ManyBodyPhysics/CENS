@@ -85,7 +85,8 @@
           // max. factorials in Clebsch-Gordan coefficients   
 
 #define FAC_LIM                300
-#define ONE_LINE                80
+//JEM #define ONE_LINE                80
+#define ONE_LINE                800
 #define ZERO_LIMIT         1.0E-10
 #define MATRIX_LIMIT       1.0E-06
 #define ENERGY_LIMIT       1.0E-06    // limit of energy changes through Lanczos iterartion   
