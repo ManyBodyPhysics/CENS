@@ -1,0 +1,16 @@
+bitarray.h
+PAR-idNondiagCalc.c
+PAR-idTwoPartAngJ.c
+PAR-idTwoPartIntJ.c
+PAR-pnLancProcess.c
+PAR-pnLancResult.c
+PAR-pnMatrVectorCalc.c
+PAR-pnSD-Basis.c
+PAR-pnShellModel.h
+PAR-pnShellModelInput.c
+PAR-pnShellModelMain.c
+PAR-pnSP-Basis.c
+PAR-pnStoreSD_MatrElem.c
+PAR-pnTwoPartAngJ.c
+PAR-pnTwoPartIntJ.c
+PAR-shellModel-Lib.c
