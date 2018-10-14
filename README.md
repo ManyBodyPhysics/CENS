@@ -16,4 +16,4 @@ M. Hjorth-Jensen, T.T.S. Kuo, and E. Osnes, Physics Reports 261, 125 (1995) incl
 * Codes for fitting polynomials and performing calculations of properties of neutrons stars or white dwarf stars. Cite as: 
 H. Heiselberg and M. Hjorth-Jensen, Physics Reports 328, 237 (2000), with link to the github address https://github.com/ManyBodyPhysics/ManybodyCodes/
 
-* To come: Coupled-cluster codes and FCIQMC codes for finite systems like quantum dots or nuclei and infinite matter.
+
