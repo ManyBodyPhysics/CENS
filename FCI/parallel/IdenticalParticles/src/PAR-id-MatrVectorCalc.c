@@ -39,7 +39,7 @@ static void idDiagMemSD_Contr(int numDiagSD, SD_STORE *sdStore,
    **  stored as float values in memory
    */
 
-static nondiagMemContr(SD_STORE *sdStore, double *initVec,
+static void nondiagMemContr(SD_STORE *sdStore, double *initVec,
                                               double *finalVec);
     /*
     ** calculates contribution from all precalculated 
@@ -157,7 +157,7 @@ static void idDiagMemSD_Contr(int numDiagSD,SD_STORE *sdStore,
      ** For MJ > 0 : |SD()> = |SD_nosym> only 
      */
 
-static nondiagMemContr(SD_STORE *sdStore,double *initVec, double *finalVec)
+static void nondiagMemContr(SD_STORE *sdStore,double *initVec, double *finalVec)
 {
   int     initSD;
   ULL     topBit;

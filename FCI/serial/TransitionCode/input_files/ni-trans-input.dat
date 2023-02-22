@@ -1,0 +1,55 @@
+E2 transition for: Zn68
+
+The basic shell model data:
+
+Initial proton number: 2
+Initial neutron number: 10
+Initial total angular momentum J is (even, odd): even
+Initial total projection of angular momentum (2*M): 4
+Initial total parity(+, -): +
+
+The number of neutron j-orbits: 4
+	n  l  2*j   min_part  max_part energy   (a = active, n = not active):
+        0  4   9       0          2      5.00         a 
+        0  3   5       0          6      0.00         a
+        1  1   1       0          2      0.00         a
+        1  1   3       0          4      0.00         a
+
+The number of proton j-orbits: 4
+	n  l  2*j   min_part  max_part energy   (a = active, n = not active):
+        0  4   9       0          2      5.00         a 
+        0  3   5       0          6      0.00         a
+        1  1   1       0          2      0.00         a
+        1  1   3       0          4      0.00         a
+
+Storage file for initial eigenvectors: eigen24_2.dat
+
+
+Final proton number: 2
+Final neutron number: 10
+Final total angular momentum J is (even, odd): even
+Final total projection of angular momentum (2*M): 4
+Final total parity(+, -): +
+
+Storage file for final eigenvectors: eigen24_2.dat
+
+
+Type of calculation (e2, e3, m1): m1
+
+E2 Neutron effective charge (unit e): 0.5
+E2 Proton effective charge (unit e):  1.5
+
+M1 Neutron effective gl (unit e): 0.0
+M1 Proton  effective gl (unit e): 1.0  
+M1 Neutron effective gs (unit): -3.826
+M1 Proton  effective gs (unit):  5.587
+
+
+Number of transitions: 3
+
+Init(no 2J) Final(no 2J) (ground state no = 0):
+      0  4        0  4
+      1  4        1  4 
+      2  8        2  8
+Output file for the results: Zn68g24_2.dat
+END_DATA

@@ -1,0 +1,67 @@
+           ** All input data are identified through a text-line which
+           ** starts with the two symbols '/' and '*' and ends with ":" or ";"
+           ** Additional informative text may be included in the form
+           **        <........ Informative text....... >
+           ** 
+
+\* Shell model calculation of proton/neutron system -- title: 89Rbneg
+
+<The basic shell data:
+
+\* The proton number: 2
+
+\* The neutron number: 2
+
+\* Total angular momentum J is (even, odd): even
+\* Twice total projection of angular momentum: 0
+\* Total parity (+, -): +
+
+\* The number of proton particle j-orbits: 4
+ <n  l  2*j   min_part  max_part energy:>
+\* Orbit_Z: 	0	3	5	0	6	-15.11
+\* Orbit_Z: 	1	1	3	0	4	-13.42
+\* Orbit_Z: 	1	1	1	0	2	-12.23
+\* Orbit_Z: 	0	4	9	0	2	-10.08
+
+\* The number of neutron particle j-orbits: 5
+ <n  l  2*j   min_part  max_part energy:>
+\* Orbit_N: 	0       4	7	0	8	3.04
+\* Orbit_N: 	1       2	5	0	6	-2.41
+\* Orbit_N: 	1       2	3	0	4	0.99
+\* Orbit_N: 	2       0	1	0	2	0.27
+\* Orbit_N: 	0	5	11	0	0	5.23
+
+<The data files>
+
+\* Input proton-proton v_effective in J-scheme:  Ni78n3lo_pp.dat
+\* Input neutron-neutron v_effective in J-scheme: Ni78n3lo_nn.dat
+\* Input proton-neutron v_effective in J-scheme:  Ni78n3lo_pn.dat
+      
+<Memory and file limitations - set >= ZERO>
+wildenthal.pn
+\* Memory to store nondiag <SD(Z)SD(N)|OP|SD(Z)SD(N)>(in Kb): 0
+\* File size to store nondiag <SD(Z)SD(N)|OP|SD(Z)SD(N)>(in Mb); 0
+
+<Energy eigenvalue parameters>
+
+\* Maximum Lanczos iterations: 100
+\* Wanted number of converged eigenstates:  10
+
+    *            Type of process                              Symbol
+    * Lanczos iteration based on random initial
+    * vector with global orthogonalization             --> random-start
+    * Continue a previous random-start process         --> random-continue
+    * Lanczos iteration based on generalized seniority
+    * initial vector with global orthogonalization     --> fixed-J-start
+    * Continue a previous fixed-start process          --> fixed-J-continue
+
+\* Type of calculation process: random-start
+
+           <In case of fixed-J the following data must be specified>
+
+\* Total 2J value: 
+\* Init vector file: 
+\* Number of start vectors:  
+\* List of vector no: 
+
+\* END_OF_INPUT_FILE:

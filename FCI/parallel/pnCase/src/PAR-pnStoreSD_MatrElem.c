@@ -1844,7 +1844,7 @@ static void printMatrElemData(int typeCalc,GR_BAS *grBas,TID wall_time, TID cpu_
 
 static void outputData(int typeCalc,GR_BAS *grBas,int *data)
 {
-  char  text[5], filename[ONE_LINE];;
+  char  text[1000], filename[ONE_LINE];;
   FILE  *file_ptr;
 
   switch(typeCalc) {

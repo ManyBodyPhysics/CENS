@@ -432,7 +432,7 @@ void printMatrElemData(SD_BAS *sdBas,SD_STORE *sdStore,
 
 void outputData(int rank,SD_STORE *sdStore, int *data)
 {
-  char  text[5];
+  char  text[1000];
   int   num;
   FILE  *file_ptr;
 
